@@ -1,0 +1,13 @@
+# Python weight converter
+
+weight = float(input("Enter your weight: "))
+unit = input("Is this weight in (K)g or (L)bs? ").upper()
+
+if unit == "K":
+    weight = weight * 2.20462
+    print(f"Your weight in pounds is: {weight:.2f} lbs")
+elif unit == "L":
+    weight = weight / 2.20462
+    print(f"Your weight in kilograms is: {weight:.2f} kg")
+else:
+    print("Invalid unit. Please enter 'K' for kilograms or 'L' for pounds.")
